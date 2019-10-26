@@ -1,0 +1,30 @@
+@startuml
+entity "users" {
+  + id [PK]
+  ==
+  name:string(10)
+}
+
+entity "calenders" {
+  + id [PK]
+  ==
+  user_id [FK] 
+}
+
+entity "events"{
+  + id [PK]
+  ==
+  title:string(10)
+}
+
+entity "users_events"{
+  + id [PK]
+  ==
+  event_id [FK]
+  user_id [FK]
+}
+
+users --o{ calenders
+events --o{ users_events
+users --o{ users_events
+@enduml
