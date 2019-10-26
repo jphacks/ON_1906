@@ -32,8 +32,8 @@ Devise.setup do |config|
   # available as additional gems.
   require 'devise/orm/active_record'
   config.omniauth :google_oauth2,
-                  Rails.application.secrets.google_client_id,
-                  Rails.application.secrets.google_client_secret
+                  Rails.application.credentials.google[:google_client_id],
+                  Rails.application.credentials.google[:google_client_secret]
 
 
 
