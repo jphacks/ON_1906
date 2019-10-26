@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="239px" preserveAspectRatio="none" style="width:249px;height:239px;" version="1.1" viewBox="0 0 249 239" width="249px" zoomAndPan="magnify"><defs><filter height="300%" id="fc44xat41wyee" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[8413f8248b2da7966d2de021109ec289]
+class users--><rect fill="#FEFECE" filter="url(#fc44xat41wyee)" height="73.9102" id="users" style="stroke: #A80036; stroke-width: 1.5;" width="98" x="6" y="8"/><ellipse cx="36.75" cy="24" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M40.3643,30.5 L32.6445,30.5 L32.6445,18.1069 L40.3643,18.1069 L40.3643,20.2651 L35.0933,20.2651 L35.0933,22.938 L39.8662,22.938 L39.8662,25.0962 L35.0933,25.0962 L35.0933,28.3418 L40.3643,28.3418 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="31" x="54.25" y="28.5352">users</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="103" y1="40" y2="40"/><ellipse cx="17" cy="51" fill="none" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="34" x="26" y="54.6348">id [PK]</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="7" x2="103" y1="60.9551" y2="60.9551"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="7" x2="103" y1="62.9551" y2="62.9551"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="86" x="12" y="75.5898">name:string(10)</text><!--MD5=[0a2c5fb983143a8ef91db63a125b90fe]
+class calenders--><rect fill="#FEFECE" filter="url(#fc44xat41wyee)" height="73.9102" id="calenders" style="stroke: #A80036; stroke-width: 1.5;" width="88" x="9" y="148.5"/><ellipse cx="24" cy="164.5" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M27.6143,171 L19.8945,171 L19.8945,158.6069 L27.6143,158.6069 L27.6143,160.7651 L22.3433,160.7651 L22.3433,163.438 L27.1162,163.438 L27.1162,165.5962 L22.3433,165.5962 L22.3433,168.8418 L27.6143,168.8418 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="56" x="38" y="169.0352">calenders</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="10" x2="96" y1="180.5" y2="180.5"/><ellipse cx="20" cy="191.5" fill="none" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="34" x="29" y="195.1348">id [PK]</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="10" x2="96" y1="201.4551" y2="201.4551"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="10" x2="96" y1="203.4551" y2="203.4551"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="64" x="15" y="216.0898">user_id [FK]</text><!--MD5=[3835c41c6c66614013ee4625906c7097]
+class events--><rect fill="#FEFECE" filter="url(#fc44xat41wyee)" height="73.9102" id="events" style="stroke: #A80036; stroke-width: 1.5;" width="89" x="140.5" y="8"/><ellipse cx="164.5" cy="24" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M168.1143,30.5 L160.3945,30.5 L160.3945,18.1069 L168.1143,18.1069 L168.1143,20.2651 L162.8433,20.2651 L162.8433,22.938 L167.6162,22.938 L167.6162,25.0962 L162.8433,25.0962 L162.8433,28.3418 L168.1143,28.3418 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="37" x="180.5" y="28.5352">events</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="141.5" x2="228.5" y1="40" y2="40"/><ellipse cx="151.5" cy="51" fill="none" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="34" x="160.5" y="54.6348">id [PK]</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="141.5" x2="228.5" y1="60.9551" y2="60.9551"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="141.5" x2="228.5" y1="62.9551" y2="62.9551"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="77" x="146.5" y="75.5898">title:string(10)</text><!--MD5=[27155fbab2f81bdcb9c876e0acb829ad]
+class users_events--><rect fill="#FEFECE" filter="url(#fc44xat41wyee)" height="86.8652" id="users_events" style="stroke: #A80036; stroke-width: 1.5;" width="106" x="132" y="142"/><ellipse cx="147" cy="158" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/><path d="M150.6143,164.5 L142.8945,164.5 L142.8945,152.1069 L150.6143,152.1069 L150.6143,154.2651 L145.3433,154.2651 L145.3433,156.938 L150.1162,156.938 L150.1162,159.0962 L145.3433,159.0962 L145.3433,162.3418 L150.6143,162.3418 Z "/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="74" x="161" y="162.5352">users_events</text><line style="stroke: #A80036; stroke-width: 1.5;" x1="133" x2="237" y1="174" y2="174"/><ellipse cx="143" cy="185" fill="none" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="34" x="152" y="188.6348">id [PK]</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="133" x2="237" y1="194.9551" y2="194.9551"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="133" x2="237" y1="196.9551" y2="196.9551"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="69" x="138" y="209.5898">event_id [FK]</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="64" x="138" y="222.5449">user_id [FK]</text><!--MD5=[b04a82eca339206e9d85114d4a1dbbc0]
+link users to calenders--><path d="M54.48,82.03 C54.22,99.76 53.91,121.3 53.64,140.05 " fill="none" id="users-&gt;calenders" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="53.6343" x2="59.5194" y1="140.1708" y2="148.2557"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="53.6343" x2="47.5206" y1="140.1708" y2="148.0843"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="53.6343" x2="53.52" y1="140.1708" y2="148.17"/><ellipse cx="53.72" cy="134.1714" fill="none" rx="4" ry="4" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[6517785eba77740c720de900eb57371b]
+link events to users_events--><path d="M185,82.03 C185,97.73 185,116.42 185,133.52 " fill="none" id="events-&gt;users_events" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="185" x2="191" y1="133.76" y2="141.76"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="185" x2="179" y1="133.76" y2="141.76"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="185" x2="185" y1="133.76" y2="141.76"/><ellipse cx="185" cy="127.76" fill="none" rx="4" ry="4" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[3666373006e7dc100ea43ba5d6034360]
+link users to users_events--><path d="M88.82,82.03 C104.23,98.45 122.7,118.13 139.32,135.84 " fill="none" id="users-&gt;users_events" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="139.4047" x2="149.2545" y1="135.9273" y2="137.6535"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="139.4047" x2="140.5055" y1="135.9273" y2="145.8665"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="139.4047" x2="144.88" y1="135.9273" y2="141.76"/><ellipse cx="135.2982" cy="131.5527" fill="none" rx="4" ry="4" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[838a2ed323286b73bd15cbbf539d27dc]
+@startuml
+entity "users" {
+  + id [PK]
+  ==
+  name:string(10)
+}
+
+entity "calenders" {
+  + id [PK]
+  ==
+  user_id [FK] 
+}
+
+entity "events"{
+  + id [PK]
+  ==
+  title:string(10)
+}
+
+entity "users_events"{
+  + id [PK]
+  ==
+  event_id [FK]
+  user_id [FK]
+}
+
+users - -o{ calenders
+events - -o{ users_events
+users - -o{ users_events
+@enduml
+
+PlantUML version 1.2019.11(Sun Sep 22 19:02:15 JST 2019)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 9.0.1+11
+Operating System: Mac OS X
+Default Encoding: UTF-8
+Language: ja
+Country: JP
+--></g></svg>
