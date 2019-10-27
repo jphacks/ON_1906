@@ -1,7 +1,34 @@
+require("jquery")
 require("moment")
 require("fullcalendar")
 
 $(document).ready(function(){
+  var results;
+  let url = 'calendars/get_events'
+  console.log(url)
+  $.ajax({
+    async: false,
+    url: url,
+    type: 'get',
+    dataType: 'json',
+    data: {},
+  })
+  .done ((data) => {
+    console.log(data)
+    results = data.results
+  })
+  .fail ((data) =>{
+    console.log("fail")
+  });
+  console.log(results);
+  var events = {
+    title: results.summary,
+    start: results.start,
+    end: results.end,
+  };
+
+  console.log(events)
+
   $('#calendar').fullCalendar({
         header: {
             // title, prev, next, prevYear, nextYear, today
@@ -31,8 +58,9 @@ $(document).ready(function(){
       month:    '月',
       week:     '週',
       day:      '日'
-    }
+    },
     
+    eventSources: [{ events: [events]}]
 
   });
 });

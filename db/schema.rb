@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_26_083117) do
+ActiveRecord::Schema.define(version: 2019_10_27_043138) do
+
+  create_table "calendars", force: :cascade do |t|
+    t.integer "user_id"
+    t.string "summary"
+    t.datetime "start"
+    t.datetime "end"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_calendars_on_user_id"
+  end
 
   create_table "sns_credentials", force: :cascade do |t|
     t.string "provider"
@@ -38,5 +48,6 @@ ActiveRecord::Schema.define(version: 2019_10_26_083117) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "calendars", "users"
   add_foreign_key "sns_credentials", "users"
 end
