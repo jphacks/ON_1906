@@ -12,7 +12,11 @@
   <body>
     <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
-        <h1><%= link_to "CalShare", '#', id:"logo" %></h1>
+        <h1><%= link_to root_path, id:"logo" do%>
+          <i class="far fa-calendar-alt"></i>
+          CalShare
+          <% end %>
+        </h1>
         <nav>
           <ul class="nav navbar-nav navbar-right">
             <li><%= link_to "Calendar", root_path %></li>
