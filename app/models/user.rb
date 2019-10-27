@@ -3,6 +3,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   # devise :database_authenticatable, :registerable,
   #        :recoverable, :rememberable, :validatable
+  has_secure_token
   devise :omniauthable,omniauth_providers: [:google_oauth2]
    def self.find_oauth(auth)
     uid = auth.uid
@@ -22,6 +23,10 @@ class User < ApplicationRecord
         user = User.create(
           name: auth.info.name,
           email:    auth.info.email,
+          provider: auth.provider,
+		  uid: auth.uid,
+          token: auth.info.token,
+          meta: auth.to_yaml
           )
         SnsCredential.create(
           uid: uid,
