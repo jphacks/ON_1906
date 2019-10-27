@@ -7,6 +7,8 @@
     <option>AtCoder勉強会</option>
   </select>
 
+  <%= button_to "取得", {controller: 'calendars', action: 'get_events'}, {method: :get} %>
+
   <%#= rendar 'events' %>
 </nav>
 <div id="calendar"></div>
