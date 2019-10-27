@@ -15,8 +15,8 @@
         <h1><%= link_to "CalShare", '#', id:"logo" %></h1>
         <nav>
           <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Home", root_path %></li>
-            <li><%= link_to "Calendar", 'calendars/index' %></li>
+            <li><%= link_to "Calendar", root_path %></li>
+            <li><%= link_to_if(user_signed_in?, "logout", '/users/log_out') {}%></li>
           </ul>
         </nav>
       </div>
