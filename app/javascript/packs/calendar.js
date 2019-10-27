@@ -21,11 +21,14 @@ $(document).ready(function(){
     console.log("fail")
   });
   console.log(results);
-  var events = {
-    title: results.summary,
-    start: results.start,
-    end: results.end,
-  };
+  var events = [];
+  results.forEach( function(result){
+    events.push({
+      title: result.summary,
+      start: result.start,
+      end: result.end
+    })
+  });
 
   console.log(events)
 
@@ -60,7 +63,7 @@ $(document).ready(function(){
       day:      '日'
     },
     
-    eventSources: [{ events: [events]}]
+    eventSources: [{ events: events}]
 
   });
 });
