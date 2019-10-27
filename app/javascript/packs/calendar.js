@@ -21,11 +21,14 @@ $(document).ready(function(){
     console.log("fail")
   });
   console.log(results);
-  var events = {
-    title: results.summary,
-    start: results.start,
-    end: results.end,
-  };
+  var events = [];
+  results.forEach( function(result){
+    events.push({
+      title: result.summary,
+      start: result.start,
+      end: result.end
+    })
+  });
 
   console.log(events)
 
@@ -39,6 +42,8 @@ $(document).ready(function(){
 
     monthNames: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
     monthNamesShort: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+
+    defaultView:'agendaWeek',
 
     // 土曜、日曜を表示
     weekends: true,
@@ -60,7 +65,7 @@ $(document).ready(function(){
       day:      '日'
     },
     
-    eventSources: [{ events: [events]}]
+    eventSources: [{ events: events}]
 
   });
 });

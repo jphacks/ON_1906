@@ -5,7 +5,7 @@ class CalendarsController < ApplicationController
 
 
   def get_events
-    @calendars =  Calendar.find_by(user_id: 1)
+    @calendars =  Calendar.where(user_id: 1)
     render json: {results: @calendars}
   end
 end
